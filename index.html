@@ -11,9 +11,9 @@
   
     <header>
       <div class="logo-container">
-          <img src="https://app.zarla.com/logo/btr9hb3kgcyjmqwfkg4f/edit?brand=Mi%20Cocina" alt="Logo Mi Cocina" class="logo">
-          <h1>Mis Recetas</h1>
-        </div>
+        <img src="https://cdn-icons-png.flaticon.com/128/1046/1046857.png" alt="Logo Mi Cocina" class="logo">
+        <h1>Mis Recetas</h1>
+      </div>      
         
       <ul class="nav-links">
           <li>
@@ -22,36 +22,48 @@
           <li>
               <a href="#">Menú</a>
           </li>
+          <li>
+            <a href="https://recetasdecocina.elmundo.es/">Sitio de las Recetas</a>
+          </li>
         </ul>
   
       <button id="dark-mode-toggle">🌙 Modo Oscuro</button>
     </header>
-  
+
     <main>
-      <div class="card-deck">
-          <div class="card">
-            <img src="https://recetasdecocina.elmundo.es/wp-content/uploads/2025/01/costillas-de-ternera-guisadas.jpg" class="card-img-top" alt="">
-            <div class="card-body">
-              <h5 class="card-title">Costillas de ternera guisadas</h5>
-              <p class="card-text">Este es un plato que tiene mucho tiempo de cocción por que la costilla de ternera es bastante dura y lo podemos hacer en olla rápida u olla normal</p>
+      <section class="carousel-container">
+        <button class="carousel-btn right" onclick="moverCarrusel(1)">&#8594;</button>
+
+
+          <div class="carousel-track">
+            <div class="card">
+              <img src="https://recetasdecocina.elmundo.es/wp-content/uploads/2025/01/costillas-de-ternera-guisadas.jpg" class="card-img-top" alt="Costillas de ternera guisadas">
+              <div class="card-body">
+                <h5 class="card-title">Costillas de ternera guisadas</h5>
+                <p class="card-text">Este es un plato que tiene mucho tiempo de cocción porque la costilla de ternera es bastante dura y se puede hacer en olla rápida o normal.</p>
+              </div>
+            </div>
+      
+            <div class="card">
+              <img src="https://recetasdecocina.elmundo.es/wp-content/uploads/2024/12/solomillo-de-ternera-en-salsa.jpg" class="card-img-top" alt="Solomillo de ternera en salsa">
+              <div class="card-body">
+                <h5 class="card-title">Solomillo de ternera en salsa a la pimienta</h5>
+                <p class="card-text">El solomillo de ternera es el mejor corte para este plato, es jugoso y delicioso.</p>
+              </div>
+            </div>
+      
+            <div class="card">
+              <img src="https://recetasdecocina.elmundo.es/wp-content/uploads/2025/03/katsudon.jpg" class="card-img-top" alt="Katsudon">
+              <div class="card-body">
+                <h5 class="card-title">Katsudon</h5>
+                <p class="card-text">Un bol de arroz blanco con chuleta de cerdo rebozada en panko y varias guarniciones.</p>
+              </div>
             </div>
           </div>
-          <div class="card">
-            <img src="https://recetasdecocina.elmundo.es/wp-content/uploads/2024/12/solomillo-de-ternera-en-salsa.jpg" class="card-img-top" alt="">
-            <div class="card-body">
-              <h5 class="card-title">Solomillo de ternera en salsa a la pimienta</h5>
-              <p class="card-text">El solomillo de ternera es el mejor corte para este plato, es la parte mas jugosa y deliciosa de la ternera</p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="https://recetasdecocina.elmundo.es/wp-content/uploads/2025/03/katsudon.jpg" class="card-img-top" alt="">
-            <div class="card-body">
-              <h5 class="card-title">Katsudon</h5>
-              <p class="card-text">Consiste en un bol de arroz blanco con una chuleta de cerdo rebozada en panko y acompañado de diferentes guarniciones como verduras, huevos revueltos y demás, un plato muy completo.</p>
-            </div>
-          </div>
-        </div>
-    </main>
+
+          <button class="carousel-btn left" onclick="moverCarrusel(-1)">&#8592;</button>
+  </section>
+</main>
     
     <script src="darkmode.js"></script>
 
@@ -59,6 +71,7 @@
       <p>Github: https://github.com/ZarachoAlan</p>
       <p>© 2025 - Todos los derechos reservados</p>
     </footer>
+
 >
 
 </body>

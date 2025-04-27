@@ -27,7 +27,7 @@ body {
     object-fit: contain; /* Mantiene proporciones */
     border-radius: 8px;   /* Opcional para los bordes suaves */
   }
-  
+
   /* Estilo para las opciones del nav */
   nav {
     text-align: left;
@@ -67,7 +67,9 @@ body {
     text-align: center;
     padding: 1rem;
     margin-top: auto;
+    width: 100%;
   }
+  
   
   /* Modo oscuro */
   #dark-mode-toggle {
@@ -148,5 +150,55 @@ body {
   body.dark-mode .card-title,
   body.dark-mode .small-text {
     color: #ddd;
+  }
+  
+  /* carrusel*/
+  .carousel-container {
+    position: relative;
+    width: 350px; /* ancho fijo para 1 tarjeta */
+    margin: auto;
+    overflow: hidden;
+    padding: 2rem 0;
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .card {
+    flex: 0 0 100%; /* ocupa todo el contenedor */
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .carousel-btn {
+    background-color: #ffcc80;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .left {
+    left: 10px;
+  }
+  
+  .right {
+    right: 10px;
   }
   
